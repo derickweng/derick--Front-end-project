@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+li{list-style:none;}
+#box{width:600px;height:300px;margin:0 auto;padding:5px;position:relative;}
+#title1,#title2{width:100px;height:30px;line-height:30px;background:#3FC;position:absolute;top:30px;text-align:center}
+#title2{left:130px;}
+#box li span{width:150px;height:40px;line-height:40px;position:absolute;left:400px;text-align:center}
+#list1 li img,#list2 li img{width:400px;height:210px;position:absolute;left:0;top:60px;}
+.spanActive{background:#CCC;}
+</style>
+<script>
+window.onload=function()
+{
+		var oBox=document.getElementById('box');
+		var aUl=oBox.getElementsByTagName('ul');
+		var aP=oBox.getElementsByTagName('p');
+		var oList1=document.getElementById('list1');
+		var oP1=oList1.getElementsByTagName('p');
+		var oList2=document.getElementById('list2');
+		var oP2=oList2.getElementsByTagName('p');
+		var arrImg=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg'];
+		var arrImg2=['img/miaov.jpg','img/2.png','img/3.png','img/4.png'];
+		var arrText=['图片一','图片二','图片三','图片四'];
+		var arrText2=['图片五','图片六','图片七','图片八'];
+		var num=0;
+		var m=0;
+		for(var i=0;i<arrImg.length;i++)
+		{
+			oList2.innerHTML+='<li>'+'<img />'+'<span>'+'</span>'+'</li>';
+			oList1.innerHTML+='<li>'+'<img />'+'<span>'+'</span>'+'</li>';		
+		}
+		var aSpan=oList1.getElementsByTagName('span');
+		var aSpan2=oList2.getElementsByTagName('span');
+		var aImg=oList1.getElementsByTagName('img');
+		var aImg2=oList2.getElementsByTagName('img');
+		for(var i=0;i<arrImg.length;i++)
+		{
+			aImg[i].src=arrImg[i];
+			aImg2[i].src=arrImg2[i];
+			aSpan[i].innerHTML=arrText[i];
+			aSpan[i].style.top=i*55+60+'px';
+			aSpan2[i].innerHTML=arrText2[i];
+			aSpan2[i].style.top=i*55+60+'px';		
+			aSpan2[i].style.display='none';		
+		}
+		oBox.timer=setInterval(List,1000);		
+function List()
+		{	
+			num++;
+			num%=arrImg.length+1;	
+			if(num==arrImg.length)
+				{
+				m++;
+				m%=aP.length;
+				}				
+			if(m==0)
+					{
+						AutoPlay(m,arrImg,aSpan,aSpan2,aImg,aImg2);
+					}
+			 if(m==1)
+					{	
+					AutoPlay(m,arrImg2,aSpan2,aSpan,aImg2,aImg);				
+					}
+		}
+	function AutoPlay(m,xaImg,xSpanPlay,xSpan2,xImgPlay,xImg2)
+	{
+						for(var i=0;i<aP.length;i++)
+					{					
+					aP[i].style.background="";
+					}	
+				aP[m].style.background="#FF9";	
+						for( var i=0; i<xaImg.length; i++ )
+							{
+								xSpanPlay[i].className= '';
+							}
+							xSpanPlay[num].className = 'spanActive';
+						if(xSpanPlay[num].className == 'spanActive')
+								{
+								for( var i=0; i<xaImg.length; i++ )
+									{
+										xImgPlay[i].style.zIndex=0;
+									}
+									xImgPlay[num].style.zIndex=num+1;
+								}	
+				for(var i=0;i<xaImg.length;i++)
+							{
+							xSpan2[i].style.display='none';		
+							xSpanPlay[i].style.display='block';
+							xImgPlay[i].style.display='block';
+							xImg2[i].style.display='none';	
+							}	
+						};		
+	
+};
+</script>
+
+</head>
+
+<body>
+<div id="box">
+	<ul id="list1">
+       <p id="title1">菜单一</p>
+    	
+	</ul>
+    <ul id="list2">
+       <p id="title2">菜单二</p>
+	</ul>
+</div>
+</body>
+</html>

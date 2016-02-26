@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* css reset */
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,pre,textarea,th,td,select,form,input{ margin:0;padding:0;font-size:12px;}
+a{text-decoration:none;color:black;}
+img{border:none;vertical-align:top}
+em{font-style:normal;}
+li{list-style:none;}
+textarea{resize:none;overflow:auto;}
+table{border-collapse:collapse;}
+/* css reset end */
+/* head */
+body{min-width:1000px}
+.head{height:452px;background:url(../photo/top_bg.jpg) repeat-x;}
+.top{height:98px;margin:0 auto;width:1000px;}
+h1{height:90px;float:left;width:189px}
+.top img{margin:15px 50px;}
+.top span{color:#cccccc;font-size:14px;float:right;}
+.serach{height:30px;margin:40px 50px 30px 50px;width:280px;float:right}
+#text{height:30px;background:#161b1f;border:1px solid #0b0e10;color:#fff;width:200px;}
+.submit{width:70px;height:30px;}
+/* head end */
+/* nav */
+.nav{height:52px;margin:0 auto;width:1000px;v}
+.nav a:hover{color:white;background:url(../photo/hover.png) no-repeat 0 10px;display:inline-block;width:103px;}
+.nav li{height:52px;width:103px;float:left;font-size:15px;font-weight:bold;text-align:center;line-height:50px;margin-left:50px}
+/* nav end */
+
+/* picTab */
+.picTab{background:url(../photo/runplay_bg.jpg) no-repeat;width:1000px;height:304px;margin:0 auto;}
+.picOne,.banner{float:left;}
+.picOne img{margin:50px;}
+.banner{margin:50px}
+.banner h2{font-size:26px;color:white;}
+.banner p{font-size:18spx;color:white;}
+.banner a{width:103px;height:27px;background:url(../photo/default.png) no-repeat;text-align:center;font-size:16px;font-weight:bold;color:white;display:block;line-height:27px}
+.banner a:hover{background:url(../photo/d_hover.png) no-repeat;text-decoration:underline;}
+/* picTab end */
+
+/* main */
+.main{height:1060px;}
+.mainTop{height:900px;background:url(../photo/main_top_bg.jpg) 0 top repeat-x;}
+.mainTopText{width:1000px;height:900px;margin:0 auto;overflow:hidden}
+/* Left */
+.mainTopLeft1{width:720px;float:left}
+.mainTopLeft1 h3{margin:20px 50px;font-size:24px;}
+.mainTopLeft1 p{font-size:18px;margin-left:50px;}
+.mainTopLeft2{width:639px;height:442px;margin:0 50px;float:left}
+.mainTopLeft2 p{font-size:15px;text-align:left;}
+.mainTopLeft2 img{width:260px;height:199px;display:block;margin:5px 14px;}
+.mainTopLeft2 span{display:block;font-size:18px;}
+.mainTopLeft2 li{font:bold;width:288px;height:238px;float:left;background:#f1f2ea;margin:0 20px 20px 0;}
+/* Left end */
+/* Left table */
+.leftTable{width:700px;height:900px;float:left;font-size:20px;padding-left:50px}
+.leftTable form{font-size:15px}
+.contect{width:254px;height:30px}
+.textarea{ rows:"233";cols:"133";overflow:auto;width:254px;height:200px;}
+.subSet{width:103px;height:27px;text-align:center;font-size:15px;background:url(../photo/default.png) no-repeat;color:white;border:none;}
+.subSet:hover{background:url(../photo/d_hover.png) no-repeat;text-decoration:underline;}
+
+/* Left table end */
+/* Right */
+.mainRight1{float:left;}
+.mainRight1 p{font-size:24px;}
+.mainRight1 dt,dd{font-size:13px;font-align:left}
+.mainRight1 a{text-decoration:underline;color:blue;}
+.mainRight1 a:hover{text-decoration:underline;color:green;}
+.mainRight1 dd{border-bottom:1px dashed #999999;width:242px;margin-bottom:20px;height:40px}
+.rightLogo1 p,.rightLogo2 p,.rightLogo1 img,.rightLogo2 img{float:left;}
+.rightLogo1 p,.rightLogo2 p{margin-right:20px}
+.rightLogo1,.rightLogo2{float:left;width:242px;margin:20px 0;}
+/* Right end */
+.mainBottom{height:160px;background:url(../photo/main1_bottom_bg.jpg) 0 bottom repeat-x;}
+.BottomBtn{width:1000px;margin:0 auto;line-height:26px;}
+.BottomBtn a{width:100px;height:26px;display:block;margin:20px 50px;text-align:center;font-size:15px;background:url(../photo/default.png) no-repeat;color:white;}
+.BottomBtn a:hover{background:url(../photo/d_hover.png) no-repeat;text-decoration:underline;}
+/* main end */
+/* footer */
+.footer{height:100px;background:url(../photo/footer_bg.jpg) repeat-x;}
+.footerText{width:230px;margin:20px auto;text-align:center}
+.footer a{display:inline-block;text-decoration:underline;color:white;margin:20px 20px 0 0}
+.footer .copyright{text-decoration:none;border-right:1px solid white;padding-right:10px}
+
+/* footer end */

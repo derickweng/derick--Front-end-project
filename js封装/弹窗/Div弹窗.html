@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>javascript练习1</title>
+<link href="DiV.css" rel="stylesheet" type="text/css"/>
+
+<script>
+window.onload=function(){
+	var oBtn1=document.getElementById('btn');
+	var oBtn2=document.getElementById('confirm');
+	var oList=document.getElementById('list');
+	var oFloats=document.getElementById('floats');
+	var oDiv=document.getElementById('changeDiv');
+	var oListRed=document.getElementById('Red');
+	var oListOrange=document.getElementById('Orange');
+	var oListBlue=document.getElementById('Blue');
+	var oListWidth1=document.getElementById('Width1');
+	var oListWidth2=document.getElementById('Width2');
+	var oListWidth3=document.getElementById('Width3');
+	var oListHeight1=document.getElementById('Height1');
+	var oListHeight2=document.getElementById('Height2');
+	var oListHeight3=document.getElementById('Height3');
+	var oReset=document.getElementById('reset');
+	oBtn1.onclick=show;
+	oBtn2.onclick=hidden;
+	oListRed.onclick=Red;
+	oListOrange.onclick=Orange;
+	oListBlue.onclick=Blue;
+	oListWidth1.onclick=Width1;
+	oListWidth2.onclick=Width2;
+	oListWidth3.onclick=Width3;
+	oListHeight1.onclick=Height1;
+	oListHeight2.onclick=Height2;
+	oListHeight3.onclick=Height3;
+	oReset.onclick=Reset;	
+	function show(){
+		oList.style.display='block';
+		oFloats.style.display='block';
+	}
+	function hidden(){
+		oList.style.display='none';
+		oFloats.style.display='none';
+		}
+	function Red(){
+		oDiv.style.background='red';
+		}
+	function Orange(){
+		oDiv.style.background='yellow';
+		}
+	function Blue(){
+		oDiv.style.background='blue';
+		}
+	function Width1(){
+		oDiv.style.width='200px';
+		}
+	function Width2(){
+		oDiv.style.width='300px';
+		}
+	function Width3(){
+		oDiv.style.width='400px';
+		}
+	function Height1(){
+		oDiv.style.height='200px';
+		}
+	function Height2(){
+		oDiv.style.height='300px';
+		}
+	function Height3(){
+		oDiv.style.height='400px';
+		}
+	function Reset(){
+		oDiv.style.width='50px';
+		oDiv.style.height='50px';
+		oDiv.style.background='#fff';
+		}
+	}
+</script>
+</head>
+<body>
+<div class="DIV">
+<p>请为下面的DIV设置样式：</p>
+<input type="button" name="" id="btn" value="点击设置"/>
+<div class="changeDiv" id="changeDiv"></div></div>
+</div>
+<div id="floats" class="floats"></div>
+<div class="list" id="list">
+	<ul class="changeColor">
+    <p>请选择背景颜色:</p>
+    <li class="Red" id="Red">红</li>
+    <li class="Orange" id="Orange">黄</li>
+    <li class="Blue" id="Blue">蓝</li>
+  </ul>
+   <ul class="changeWidth">
+	<p>请选择宽(px):</p>
+    <li id="Width1" >200</li>
+    <li id="Width2" >300</li>
+    <li id="Width3" >400</li></ul>
+  <ul class="changeHight">
+	<p>请选择高(px):</p>
+    <li id="Height1">200</li>
+    <li id="Height2">300</li>
+    <li id="Height3">400</li>
+   </ul>
+    <input type="reset" name="" id="reset" value="恢复" />
+    <input type="submit" name="" id="confirm" value="确定" />
+    </div>
+</body>
+</html>

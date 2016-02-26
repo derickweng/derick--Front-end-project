@@ -1,0 +1,4 @@
+	<!--[if lt IE 10]>
+		<div class="tips" style="color:white;height:30px;background:red;text-align:center;line-height:30px;position:fixed;bottom:0;"> 您的浏览器版本过低了哦！为了更好的浏览体验，请升级浏览器！ 
+		</div>
+	<![endif]-->

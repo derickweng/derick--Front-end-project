@@ -1,0 +1,45 @@
+@charset "utf-8";
+body,dl,dt,p,input{margin:0;padding:0;border:none;font-size:14px;}
+li{list-style:none;}
+body{background:#CCC;height:100%}
+html{height:100%}
+.DIV p{ font-size:30px;font-weight:bold;margin:30px;float:left;position:relative}
+#btn{ width:90px;height:40px;background:red;color:white;float:left;margin-top:30px;}
+.changeDiv{ width:50px;height:50px;border:5px solid black;position:absolute;top:120px;left:30px;float:left;background:#fff}
+.list{width:300px;height:180px;position:absolute;top:50%;left:50%;background:white;border:10px solid #999;margin:-90px 0 0 -300px;text-align:center}
+.list li{float:left;margin-bottom:20px;margin-left:10px;}
+.list input{background:#009;color:white;width:40px;height:30px;}
+.list p{float:left}
+/* change */
+.Red,.Blue,.Orange{width:30px;text-align:center;color:#FFF;border:1px solid white;}
+.Red{background:#0F3;}
+.Red:hover{background:red;border:1px solid black;cursor:pointer}
+.Blue{background:#44F;}
+.Blue:hover{background:blue;border:1px solid black;cursor:pointer}
+.Orange{background:#C90;}
+.Orange:hover{background:#FF0;border:1px solid black;color:black;cursor:pointer}
+.changeWidth li,.changeHight li{width:30px;background:#D9D9D9;border:#707070 1px solid;color:#707070;text-align:center}
+.changeWidth li:hover,.changeHight li:hover{background:#FF8000;border:1px solid #000;color:black;cursor:pointer}
+/* change end */
+/* floats */
+.floats{width:100%;height:100%;background:rgba(0,0,0,0.5);filter:alpha(opacity=50);zoom:1;}
+.floats,.list{display:none;}
+#reset{margin-left:100px;}
+#confirm{margin-right:100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

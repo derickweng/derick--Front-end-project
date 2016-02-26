@@ -1,0 +1,54 @@
+/* CSS Document */
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,button{ margin:0; padding:0; -webkit-tap-highlight-color:rgba(255,255,255,0); }
+html {   width: 100%; font-family: 'Heiti SC', 'Microsoft YaHei'; font-size: 100px; outline: 0;}
+body {  width:100%; margin: 0;position: relative; background-color:#fff;}
+a:hover,a:link,a:visited,a{ color:inherit; text-decoration:none;}
+ul,li{list-style:none}
+i{font-style:normal}
+/* header */
+.index {position: absolute;left: 0;top: 0;border-radius: 4px;box-shadow:20px 20px 20px #e5e5e5;}
+header{ width:12.42rem; height:1.35rem; background-color:#7ecef4;}
+header i.logo{ float:left; display:block; width:1rem; height:0.8rem; margin:0.14rem 0 0.24rem 0.18rem; background:url(../images/icon/pixeler.gif) no-repeat; background-size:1rem;cursor: pointer;}
+header .sch{ float:left; width:11rem; height:0.8rem; margin:0.24rem 0 0.24rem 0.18rem; border-radius:0.1rem; background-color:#68b2d5; text-align:center;}
+header .sch input{width:6rem; font-size:0.4rem;position:absolute;top:0.4rem;left:3.8rem;border-radius:3px;border:1px solid white;}
+header .sch img{ width:0.45rem; height:0.44rem; position:absolute;top:0.4rem;left:10rem;cursor:pointer;}
+.clear:after{content: '';display:block;clear: both;}
+/* header end */
+
+.locker {width:10rem;height:100%;position: absolute;left: -11rem;top: 0;}
+.locker {background:#7ecef4;}
+
+
+.logo-cover { height:1.5rem; overflow:hidden;position:absolute; bottom:0.3rem; left:3.8rem;z-index: 5;}
+.logo-cover .cover-img  { float:left; width:2rem; height:1rem;text-align:center;}
+.logo-cover .cover-img span{font-size:1rem;display:block;color: red;}
+.logo-cover p{ float:left; margin-left:0.15rem; font-size:0.35rem; line-height:1.5rem; color:#fff;}
+
+
+.banner{  width:12.42rem;height:6.6rem; overflow:hidden;}
+.banner ul {width:12.42rem;height:6.6rem; position:relative;}
+.banner ul li { width:12.42rem;height:6.6rem;position: absolute;top: 0;left: 0;z-index: 1;}
+.banner img{width:12.42rem; }
+.name{ width:12.42rem; height:1.05rem; font-size:0.38rem; line-height:1.3rem; border-bottom:1px solid #e1e1e1;}
+.name p{ margin-left:0.47rem;}
+.contain{ width:12.14rem; height:100%; margin:0 0.14rem; overflow:hidden;}
+.ad{ width:12.14rem; height:6rem; margin-top:0.3rem;}
+.ad img{ width:12.14rem; height:6rem;}
+.ad-left ,.add-right{ float:left; width:5.92rem; height:3.8rem; margin-top:0.3rem; overflow:hidden;}
+.ad-left{ margin-right:0.3rem;}
+.ad-left img,.add-right img{ width:5.92rem; height:3.8rem;}
+
+/*  Other activities */
+.favorable{ width:12.42rem; height:100%; overflow:hidden;}
+.fb:nth-child(odd){ float:left; width:6.18rem; height:6.7rem; border-right:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; overflow:hidden;}
+.fb:nth-child(even){ float:left; width:6.18rem; height:6.7rem; border-bottom:1px solid #e1e1e1; overflow:hidden;}
+.fb-lt{ width:5.9rem; height:6.5rem; margin:0.3rem 0.14rem 0 0.14rem;}
+.fb-lt img{ width:5.9rem; height:3.8rem; display:block;}
+.fb-lt p{}
+.fb-lt p.fb-name{ margin-top:0.3rem; font-size:0.48rem;}
+.fb-lt p.price{ margin-top:0.2rem; font-size:0.3rem;}
+.fb-lt p span{ font-size:0.3rem; color:#d7d7d7;}
+.fb-lt p span.discount{ float:left; margin:0.2rem 0 0 3rem; color:#f46b29;}
+.fb-lt p span.num{ float:right; margin-right:0.3rem;margin-top:0.1rem;}
+.fb-lt p span big{ font-size:0.5rem; color:#ff3500;}
+/*  Other activities */
