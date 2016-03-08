@@ -1,3 +1,3 @@
 # derickweng
-  添加https://htmlpreview.github.io/?进行静态m页面预览
-derickweng
+  添加 http://htmlpreview.github.io/?
+  进行静态m页面预览derickweng
